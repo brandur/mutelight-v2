@@ -112,7 +112,7 @@ Enter the number corresponding to the connection for which your query will run w
 
 The `\se` (`s` SQL, `e` execute) command is useful for multiline queries. It searches backwards for the beginning of a query by looking for certain SQL command keywords (e.g. `SELECT`) and searches forwards for the end of a query by looking for your connection's command terminator (e.g. `;`). For example, the following SQL should execute with `\se` no matter where your cursor is on it:
 
-```
+``` sql
 select *
 from user 
 limit 100;
