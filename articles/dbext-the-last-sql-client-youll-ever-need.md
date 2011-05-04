@@ -1,4 +1,4 @@
-As the first part of my [Advanced Vim series](/series/advanced-vim), I'd like to introduce **dbext**, a Vim plugin that's potentially life-changing after fighting through the somewhat daunting initial configuration and usage.
+As the first part of my [Masters of Vim series](/series/masters-of-vim), I'd like to introduce **dbext**, a Vim plugin that's potentially life-changing after fighting through the somewhat daunting initial configuration and usage.
 
 This short article is no substitute for the extensive documentation that comes bundle with the plugin. Additional information and answers to any lingering questions can usually be found there.
 
