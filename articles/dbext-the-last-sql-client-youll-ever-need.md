@@ -5,7 +5,7 @@ This short article is no substitute for the extensive documentation that comes b
 Installation
 ------------
 
-Install the Vim plugin by downloading the [archive from Vim.org](http://www.vim.org/scripts/script.php?script_id=356), or clone the [Git mirror](https://github.com/vim-scripts/dbext.vim).
+Install the plugin by downloading the [archive from Vim.org](http://www.vim.org/scripts/script.php?script_id=356), or clone the [Git mirror](https://github.com/vim-scripts/dbext.vim).
 
 Additionally, the script itself relies on the command line clients of the various DBMSes that it supports. For dbext to work, refer to the table below and make sure that the binary appropriate for the system you'd like to work with is available. Often these clients are bundled with the DBMS itself, but otherwise should be available through your favorite package manager.
 
