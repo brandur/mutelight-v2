@@ -28,7 +28,7 @@ function doImageResize($job)
 
 A result of the way this function registration works is that the Gearman daemon knows exactly which connected workers can handle which types of jobs. That is, if only worker #1 registered a function for `resizeImage`, then when a `resizeImage` job is encountered, it must be sent to worker #1.
 
-Another aspect of Gearman's behaviour which isn't intuitively obvious is that if there's a job ready to be pulled off the queue, and has no connected workers that are able to handle it, that job stays in the queue ready to be run, but in the meantime other jobs in the queue continue to be processed. When a worker connects that can handle that previously unprocessable job, it gets passed off to the connected worker immediately.
+Another aspect of Gearman's behaviour which isn't intuitively obvious is that if there's a job ready to be pulled off the queue, and has no connected workers that are able to handle it, that job stays in the queue ready to be run, but in the meantime other jobs in the queue continue to be processed. When a worker connects that can handle that previously unprocessable job, it gets passed off immediately.
 
 In this way, jobs that belong to separate logical groups and which may have been stored in different queues in another system, can coexist in a single Gearman queue by simply having distinct Gearman workers.
 
