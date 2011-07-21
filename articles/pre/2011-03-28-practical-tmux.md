@@ -183,5 +183,5 @@ bind-key a send-prefix
 #set -g status-right "#[fg=yellow]#(uptime | cut -d ',' -f 2-)"
 
 # Highlight active window
-set-window-option -g window-status-current-bg red</pre></div>
+set-window-option -g window-status-current-bg red
 ```
