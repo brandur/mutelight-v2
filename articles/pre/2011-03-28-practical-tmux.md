@@ -114,15 +114,15 @@ fi
 
 base_session="$1"
 # This actually works without the trim() on all systems except OSX
-tmux_nb=$(trim `tmux ls | grep -P "^$base_session" | wc -l`)
+tmux_nb=$(trim `tmux ls | grep "^$base_session" | wc -l`)
 if [[ "$tmux_nb" == "0" ]]; then
     echo "Launching tmux base session $base_session ..."
-    tmux new -s $base_session
+    tmux new-session -s $base_session
 else
     # Make sure we are not already in a tmux session
     if [[ -z "$TMUX" ]]; then
         # Kill defunct sessions first
-        old_sessions=$(tmux ls | egrep "^[0-9]{14}.*[0-9]+\)$" | cut -f 1 -d:)
+        old_sessions=$(tmux ls 2>/dev/null | egrep "^[0-9]{14}.*[0-9]+\)$" | cut -f 1 -d:)
         for old_session_id in $old_sessions; do
             tmux kill-session -t $old_session_id
         done
@@ -144,6 +144,8 @@ fi
 ```
 
 <span class="addendum">Edit (2011/04/01) &mdash;</span> added new script logic so that defunct sessions are killed before starting a new one. Defunct sessions are left behind when tmux isn't quit explicitly.
+
+<span class="addendum">Edit (2011/07/21) &mdash;</span> added configuration and the `tmx` script to my [tmux-extra repository](https://github.com/brandur/tmux-extra) on GitHub for more convenient access.
 
 ### Complete .tmux.conf
 
@@ -183,5 +185,5 @@ bind-key a send-prefix
 #set -g status-right "#[fg=yellow]#(uptime | cut -d ',' -f 2-)"
 
 # Highlight active window
-set-window-option -g window-status-current-bg red</pre></div>
+set-window-option -g window-status-current-bg red
 ```
