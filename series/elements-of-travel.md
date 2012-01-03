@@ -1,0 +1,1 @@
+Travel is one of the most valuable learning tools available: a crash course in social interaction, language, independence, assertiveness, and story telling. This rarely updated feed will cover some essential insights into traveling the world.
