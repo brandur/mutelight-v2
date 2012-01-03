@@ -4,7 +4,7 @@ Many of us have fond memories of reading of Arthur Dent and Ford Prefect traveli
 
 Today we have our own form of the Guide, and it's better than even Douglas Adams could have imagined: Wikipedia.
 
-Wikipedia is the ultimate travel resource. On a trip across the country it lets you look up everything&mdash;from towns and landmarks you're visiting to checking what your tour guide (yep, these guys get a lot wrong).
+Wikipedia is the ultimate travel resource. On a trip across the country it lets you look up everything&mdash;from towns and landmarks you're visiting to checking what your tour guide.
 
 This would be a world with almost perfect flow of information if not for one thing. In every country on Earth, phone carriers actively encourage technological retrogression by keeping data roaming rates prohibitively expensive&mdash;and you're going to need data for a Wikipedia lookup.
 
