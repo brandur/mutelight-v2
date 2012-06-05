@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+target="$1"
+
+if [ "$target" == "" ]; then
+  echo "usage: $0 TARGET"
+  exit 1
+fi
+
+for entity in $(find $target -type f | sed 's/\..*$//' | uniq); do
+  echo ""
+  echo ""
+  echo "$entity"
+  echo ""
+
+  bin/create $entity
+done

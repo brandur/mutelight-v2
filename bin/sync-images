@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+if [ "$MUTELIGHT_BUCKET" == "" ]; then
+  echo "must set MUTELIGHT_BUCKET"
+  exit 1
+fi
+
+if [ ! -d "images" ]; then
+  echo "need images directory"
+  exit 1
+fi
+
+if [ ! $(which s3cmd) ]; then
+  echo "need s3cmd"
+  exit 1
+fi
+
+s3cmd sync images/ s3://$MUTELIGHT_BUCKET/
+s3cmd setacl --acl-public --recursive s3://$MUTELIGHT_BUCKET/

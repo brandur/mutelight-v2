@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+. bin/_common.sh
+
+curl -i -u ":$MUTELIGHT_HTTP_API_KEY" -X PUT $MUTELIGHT_HOST/$type/$slug --data-urlencode "attributes@$target.rb" --data-urlencode "content@$target.md"

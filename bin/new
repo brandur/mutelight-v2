@@ -1,0 +1,47 @@
+#!/bin/sh
+
+set -e
+
+target="$1"
+
+if [ "$target" == "" ]; then
+  echo "usage: $0 TARGET"
+  exit 1
+fi
+
+# Handle a '.' so that it kind of behaves like other scripts
+target=${target%.}
+
+if [ -f "$target.rb" ] || [ -f "$target.md" ]; then
+  echo "TARGET already exists"
+  exit 1
+fi
+
+path=$(cd $(dirname "$target"); pwd)
+type=${path##*/}
+slug=${target##*/}
+#echo "type: $type slug: $slug"
+
+if [ "$type" == "" ]; then
+  echo "couldn't infer TYPE from TARGET"
+  exit 1
+fi
+
+if [ "$slug" == "" ]; then
+  echo "couldn't infer SLUG from TARGET"
+  exit 1
+fi
+
+if [ "$type" == "articles" ]; then
+  touch "$target.md"
+  cat > "$target.rb" <<EOF
+{ title:        "", 
+  slug:         "$slug", 
+  published_at: Time.parse("$(date)"), 
+  summary:      "", 
+}
+EOF
+else
+  echo "don't know how to handle TYPE $type"
+  exit 1
+fi
