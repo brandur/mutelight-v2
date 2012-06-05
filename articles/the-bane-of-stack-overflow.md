@@ -6,7 +6,7 @@ Here's a portrayal of what a fairly well-answered question on <acronym title="St
 > 
 > **Responses:**
 > 
-> 1. <img alt="Stack Overflow accepted answer checkmark" src="/images/articles/2010-07-19-the-bane-of-stack-overflow/green_checkmark.png" class="inline" /> &lt;Top-rated response, usually well-written and really good&gt;
+> 1. <img alt="Stack Overflow accepted answer checkmark" src="https://s3.amazonaws.com/mutelight/the-bane-of-stack-overflow/green_checkmark.png" class="inline" /> &lt;Top-rated response, usually well-written and really good&gt;
 > 
 > 2. &lt;Good response&gt;
 > 

@@ -1,7 +1,7 @@
 Reading the names of SLR lenses may look like a daunting task to a newcomer, but with a little knowledge of basic photography and the names of a brand's lens designations (and their abbreviations), it's actually pretty easy. The different parts of the name of a popular Nikon lens are broken down in Fig. 1 below.
 
 <div class="figure">
-    <a href="/images/articles/2009-03-17-reading-the-names-of-camera-lenses/parts-of-a-lens-name.png" title="Link to image"><img src="/images/articles/2009-03-17-reading-the-names-of-camera-lenses/parts-of-a-lens-name.png" alt="Parts of a lens name" /></a>
+    <a href="https://s3.amazonaws.com/mutelight/reading-the-names-of-camera-lenses/parts-of-a-lens-name.png" title="Link to image"><img src="https://s3.amazonaws.com/mutelight/reading-the-names-of-camera-lenses/parts-of-a-lens-name.png" alt="Parts of a lens name" /></a>
     <p><strong>Fig. 1:</strong> <em>Parts of a lens name: brand, focal length(s), maximum aperture(s), other</em></p>
 </div>
 
