@@ -11,14 +11,14 @@ Installation
 1. Follow the setup instructions over at [Hekla](https://github.com/brandur/hekla).
 2. Export script configuration:
 
-   export MUTELIGHT_HOST="https://mutelight.herokuapp.com"
-   export MUTELIGHT_HTTP_API_KEY="xxx"
-   export MUTELIGHT_BUCKET="mutelight" # S3 bucket for images
+        export MUTELIGHT_HOST="https://mutelight.herokuapp.com"
+        export MUTELIGHT_HTTP_API_KEY="xxx"
+        export MUTELIGHT_BUCKET="mutelight" # S3 bucket for images
 
 3. Sync images to S3:
 
-    bin/sync-images
+        bin/sync-images
 
 4. Publish the article content:
 
-    bin/mass-create articles/
+        bin/mass-create articles/
