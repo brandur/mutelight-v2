@@ -33,7 +33,7 @@ Save this as a `*.vim` script (e.g. `focus.vim`) and source it in using MacVim's
 As you can see, we get an interface nearly indistinguishable from the one offered by WriteRoom, and with the full power of Vim. Outstanding!
 
 <div class="figure">
-    <a href="https://s3.amazonaws.com/mutelight/vim-is-writeroom-level-2/vim-masquerading-as-writeroom.png" title="Link to full-size image"><img src="https://s3.amazonaws.com/mutelight/vim-is-writeroom-level-2/vim-masquerading-as-writeroom-small.png" alt="Vim masquerading as WriteRoom" /></a>
+    <a href="https://d25zpof2afwnhk.cloudfront.net/vim-is-writeroom-level-2/vim-masquerading-as-writeroom.png" title="Link to full-size image"><img src="https://d25zpof2afwnhk.cloudfront.net/vim-is-writeroom-level-2/vim-masquerading-as-writeroom-small.png" alt="Vim masquerading as WriteRoom" /></a>
     <p><strong>Fig. 1:</strong> <em>Vim masquerading as WriteRoom</em></p>
 </div>
 

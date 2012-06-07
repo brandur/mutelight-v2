@@ -5,6 +5,8 @@ Article content for [Mutelight](https://mutelight.org). Designed to be powered b
 
 Content in this repository is all rights reserved.
 
+**Cloudfront distribution:** https://d25zpof2afwnhk.cloudfront.net
+
 Installation
 ------------
 
