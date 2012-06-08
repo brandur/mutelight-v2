@@ -1,7 +1,6 @@
 IDEAS
 =====
 
-* Gearman faux queues
 * Getty photographer
 * UITableViewController without NSFetchedResultsControllerDelegate
 * 5 minutes a day
