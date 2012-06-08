@@ -2,7 +2,7 @@ Our [Heroku Postgres Dev](https://postgres.heroku.com/) plans recently went into
 
 Some key features of the new dev plan is that databases under it are 9.1 (up from 8.3 which is what the shared databases ran under), support hstore, and can be managed remotely using `heroku pg:psql` or any other Postgres client.
 
-However, since the dev plan adds a brand new database, the default is to end up with an empty database with none of your previous application data. If you're like me, and not too familiar with Heroku Postgres, it might not be immediately obvious how to seemlessly get your data migrated over. Lucky for you though, you're on Heroku! Using pgbackups, there's a very simple way to move your data between databases and produce a backup as a convenient byproduct.
+However, since the dev plan adds a brand new database, the default is to end up with an empty store with none of your previous application data. If you're like me, and not too familiar with Heroku Postgres, it might not be immediately obvious how to seemlessly get your data migrated over. Lucky for you though, you're on Heroku! Using pgbackups, there's a very simple way to move your data between databases and produce a backup as a convenient byproduct.
 
 Add the `pgbackups` addon and capture a backup of your current shared database:
 
