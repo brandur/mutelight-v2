@@ -38,7 +38,7 @@ if [ "$type" == "articles" ]; then
 { title:        "", 
   slug:         "$slug", 
   published_at: Time.parse("$(date)"), 
-  summary:      "", 
+  location:     "San Francisco",
 }
 EOF
 else
