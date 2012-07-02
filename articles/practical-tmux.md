@@ -1,4 +1,4 @@
-Today I switched over completely from GNU Screen to the more modern BSD-licensed alternative, **tmux**. After making sure that tmux would handle all the normal things that I used I used Screen for, I took the plunge, and haven't looked back. The [project's webpage](http://tmux.sourceforge.net/) has a complete list of features available under tmux, but as an everyday user of Screen, here are the major reasons I switched:
+Today I switched over completely from GNU Screen to the more modern BSD-licensed alternative, **tmux**. After making sure that tmux had replacements for all Screen's key features, I took the plunge, and haven't looked back. The [project's webpage](http://tmux.sourceforge.net/) has a complete list of features available under tmux, but as an everyday user of Screen, here are the major reasons I switched:
 
 * **Better redraw model:** I use Awesome WM, a tiling window manager, and terminals containing Screen sessions would glitch out regularly; spewing all kinds of artifacts into their windows. Sufficed to say, tmux doesn't do this.
 
