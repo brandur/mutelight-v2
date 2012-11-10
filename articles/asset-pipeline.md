@@ -1,4 +1,4 @@
-Rails has great built-in support for an asset pipeline, and I often find myself wanting to reuse this pattern in Sinatra. Initially, I'd boot up a Sprockets module directly in my application's rackup file (that's `config.ru`), but more recently I've found that I can get great flexibility and clarity by running it from a Sinatra module.
+The spectacular asset pipeline that shipped with Rails 3.1 is an easy feature to get used to once you've started using it, and when writing light Sinatra apps it's one feature that I miss enough to pull in. Initially, I'd boot up a Sprockets module directly in my application's rackup file (that's `config.ru`) and map it to a particular URL path. This approach works well, but makes a mess in the rackup file and offers little in terms of fine-grained control. More recently I've found that I can get better flexibility and clarity by running it from a custom Sinatra module.
 
 Add Sprockets and Yahoo's YUI compressor to your `Gemfile`:
 
@@ -16,6 +16,8 @@ Your assets file structure should look something like this:
 ```
 + assets
   + images
+    - my-jpg.jpg
+    - my-png.png
   + javascripts
     - app.js
     - my-scripts.coffee
