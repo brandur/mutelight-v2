@@ -21,9 +21,9 @@ Common Problems and Solutions
 
 All that said, unfortunately tmux isn't completely convention over configuration, and it took a bit of work to get running exactly how I wanted. The purpose of this post is to go over some common tmux problems and their solutions.
 
-### C-b .. Really?
+### C-b
 
-After reading a lot of articles online about tmux, I eventually concluded that no one uses tmux's default command sequence `C-b`, and that includes the developers themselves. Fix this in `~/.tmux.conf` by changing it to `C-a` with the following line:
+Now there's there a prefix that you have to reach for! Fix this in `~/.tmux.conf` by changing it to `C-a`:
 
 ```
 set-option -g prefix C-a
