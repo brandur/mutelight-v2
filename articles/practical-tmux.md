@@ -23,7 +23,7 @@ All that said, unfortunately tmux isn't completely convention over configuration
 
 ### C-b
 
-Now there's there a prefix that you have to reach for! Fix this in `~/.tmux.conf` by changing it to `C-a`:
+Now there's a prefix that you have to reach for! Fix this in `~/.tmux.conf` by changing it to `C-a`:
 
 ```
 set-option -g prefix C-a
