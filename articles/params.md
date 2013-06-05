@@ -1,6 +1,6 @@
 While designing our [V3 platform API](https://devcenter.heroku.com/articles/platform-api-reference), we made the decision to make the formatting in our requests and responses as symmetric as possible. Although common for an API to return JSON, it's not quite as common to take it as input, but is our recommended usage for all incoming `PATCH`/`POST`/`PUT` requests.
 
-Largely reasons largely for developer convenience, we decided to allow fallback to form-encoded parameters as well (for the time being at least), so we put together a helper method that allows us to handle these in a generic fashion. It looks something like this:
+Largely reasons largely for developer convenience, we decided to allow fall back to form-encoded parameters as well (for the time being at least), so we put together a helper method that allows us to handle these in a generic fashion. It looks something like this:
 
 ``` ruby
 class API < Sinatra::Base
@@ -73,4 +73,23 @@ By re-implementing the helper above to ignore `params`, the catch-all set of par
       {}
     end
   end
+```
+
+## rack-test
+
+As an addendum, it's worth mentioning that `rack-test` also sends `application/x-www-form-urlencoded` by default (and always will unless you explicitly override `Content-Type` to a non-nil value), and that's what's going on when you do this:
+
+``` ruby
+it "creates a resource" do
+  post "/resources", name: "my-resource"
+end
+```
+
+We found that it was worthwhile writing our tests to check the primary input path foremost, so most look closer to the following:
+
+``` ruby
+it "creates a resource" do
+  header "Content-Type", "application/json"
+  post "/resources", MultiJson.encode({ name: "my-resource" })
+end
 ```
