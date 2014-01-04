@@ -33,13 +33,13 @@ if [ "$slug" == "" ]; then
 fi
 
 if [ "$type" == "articles" ]; then
-  touch "$target.md"
-  cat > "$target.rb" <<EOF
-{ title:        "",
-  slug:         "$slug",
-  published_at: Time.parse("$(date)"),
-  location:     "San Francisco",
-}
+  cat > "$target.md" <<EOF
+---
+title: $slug
+slug: $slug
+published_at: $(date)
+location: San Francisco
+---
 EOF
 else
   echo "don't know how to handle TYPE $type"
