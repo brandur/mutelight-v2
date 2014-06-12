@@ -67,7 +67,7 @@ By re-implementing the helper above to ignore `params`, the catch-all set of par
     if request.content_type == "application/json"
       indifferent_params(MultiJson.decode(request.body.read))
       request.body.rewind
-    elsif form_data?
+    elsif request.form_data?
       indifferent_params(request.POST)
     else
       {}
